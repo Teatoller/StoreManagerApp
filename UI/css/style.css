@@ -4,3 +4,27 @@ body {
 	margin-top: 10px;
 	padding:8px;
 }
+/* header */
+.header img {
+	height: 35px;
+	width: 35px;
+}
+
+.img-align {
+	display: inline-block;
+}
+
+.header {
+	background: #AA7739;
+	border: 1px solid #FFD9AA;
+	color: #552F00;
+	font-weight: bold;
+	margin: auto;
+	max-height: 30px;
+	max-width: 400px;
+	padding: 40px;
+	position: relative;
+}
+.header h1 {
+	color: #FFD9AA;
+}
