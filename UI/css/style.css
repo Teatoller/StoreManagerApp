@@ -28,3 +28,39 @@ body {
 .header h1 {
 	color: #FFD9AA;
 }
+/* Main login Area */
+.containerlog {
+	background: #AA7739;
+	border-width: 0px 1px 0px 1px;
+	border-style: solid;
+	color: #FFD9AA;
+	font-weight: bold;
+	margin: auto;
+	max-width: 400px;
+	max-height: 190px;
+	padding: 40px;
+}
+/* Input fields */
+input[type=text], input[type=password] {
+	border: 1px solid #805015;
+	margin: 8px;
+	padding: 8px;
+	width: 80%;
+}
+
+input[type=submit] {
+	background: #552F00;
+	border: 1px solid #805015;
+	color: #FFD9AA;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 25px;
+	padding: 15px;
+	min-width: 25%;
+	border: 1px solid #805015;
+}
+
+Span {
+	font-size: 15px;
+}
