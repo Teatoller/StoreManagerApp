@@ -27,6 +27,8 @@ body {
 }
 .header h1 {
 	color: #FFD9AA;
+	letter-spacing: 6px;
+	padding-left: 4px;
 }
 /* Main login Area */
 .containerlog {
@@ -59,6 +61,16 @@ input[type=submit] {
 	padding: 15px;
 	min-width: 25%;
 	border: 1px solid #805015;
+}
+
+.containerfooter {
+	color: #FFD9AA;
+	background: #AA7739;
+	margin-top: 20px;
+	margin: auto;
+	max-width: 400px;
+	padding: 40px;
+	text-align: center; 	
 }
 
 Span {
