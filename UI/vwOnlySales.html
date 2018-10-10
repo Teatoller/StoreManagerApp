@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>StoreManagerApp Dashboard</title>
+    <script src="myscript.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="headers">
+            <img src="img/logo.png" class="img-align" alt="Cart image logo for the Store Manager application"><h1 class="img-align">Store Manager</h1>
+        </div>
+    </header>
+    <div class="main-menu">
+    <a href="landing.html" class="active">Home</a>
+    <a href="#">Sales by Type</a>
+    <a href="#">Sales by Value</a>
+    <a href="#">Sales by Date</a>
+    <a href="#"> </a>
+    <a href="#"> </a>
+    <a href="#"> </a>
+    <a href="#"> </a>
+    <a href="#">Help</a>
+    </div>
+    <h2>View Sales by Type</h2>
+    <input type="text" id="menuInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table id="myDataTable">
+        <tr>
+            <th>Product Name</th>
+            <th>Category Name</th>
+            <th>Barcode</th>
+            <th> </th>
+            <th>Bill No</th>
+            <th> </th>
+            <th>Date & Time</th>
+            <th> </th>
+            <th>Total Amount</th>
+            <th> </th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>Nescafe 250g</td>
+            <td>Coffee</td>
+            <td>02000775995</td>
+            <td> </td>
+            <td>BS74589</td>
+            <td> </td>
+            <td> 10-10-2018</td>
+            <td>0.00</td>
+            <td>109.00</td>
+            <td>0.00</td>
+            <td>Mpesa</td>
+        </tr>
+        <tr>
+            <td>Dormans 300g</td>
+            <td>Coffee</td>
+            <td>02000776995</td>
+            <td> </td>
+            <td>BS00580</td>
+            <td> </td>
+            <td> 11-10-2018</td>
+            <td>0.00</td>
+            <td>214.00</td>
+            <td>0.00</td>
+            <td>Cash</td>
+        </tr>
+        <tr>
+            <td>Brookside 300ml</td>
+            <td>Milk</td>
+            <td>03000775995</td>
+            <td> </td>
+            <td>BS45512</td>
+            <td> </td>
+            <td> 11-10-2018</td>
+            <td>0.00</td>
+            <td>60.00</td>
+            <td>0.00</td>
+            <td>Card</td>
+        </tr>
+
+    </table>
+
+    <footer class="temp-footer"><small>AC-33 &copy;2018</small>
+    </footer>
+
+</body>
+</html>
