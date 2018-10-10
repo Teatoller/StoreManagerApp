@@ -127,6 +127,20 @@ input[type=submit] {
 	text-align: center; 	
 }
 
+.temp-footer {
+	color: #FFD9AA;
+	background: #AA7739;
+	border-width: 1px;
+	font-size: 12px;
+	font-weight: bold;
+	margin: auto;
+	max-height: 15px;
+	max-width: 100%;
+	padding: 40px;
+	text-align: center; 	
+}
+
+
 
 Span {
 	font-size: 15px;
