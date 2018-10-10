@@ -73,6 +73,39 @@ input[type=submit] {
 	text-align: center; 	
 }
 
+
 Span {
 	font-size: 15px;
+}
+
+a.button {
+	appearance: button;
+    border: 1px solid #805015;        
+    background: #552F00;	
+	color: #FFD9AA;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 25px;	
+	min-width: 25%;
+	padding: 15px;
+	text-decoration: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    
+	
+}
+
+
+/* Make page responsive */
+@media screen and (max-width: 600px) {
+	input[type=submit]{
+		width: 100%;
+	}
+	input[type=password]{
+		width: 100%;
+	}
+	input[type=text]{
+		width: 100%;
+	}
 }
