@@ -99,7 +99,7 @@ input[type=submit] {
     background-color: #552F00;
     color: #FFD9AA;
     display: block;
-    height: 45px;
+    height: 16px;
     padding: 12px;
     text-decoration: none;
     -webkit-appearance: button;
@@ -162,9 +162,9 @@ a.button {
 }
 
 /* Table Area */
-* {
-	box-sizing: border-box;
-}
+/** {
+  box-sizing: border-box;
+}*/
 
 
 /* Search bar */
@@ -178,7 +178,7 @@ a.button {
 	margin-bottom: 12px;
 	padding: 12px 20px 12px 40px;
 	position: absolute;
-	top: 110px;
+	top: 120px;
 	width: 50%;
 }
 /* Report and data area */
