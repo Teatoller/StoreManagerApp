@@ -192,7 +192,7 @@ a.button {
 	width: 82%;
 }
 
-#myDataTable th, #myDataTable td {
+#myDataTable th, #myTable td {
 	text-align: left;
 	padding: 12px;
 }
