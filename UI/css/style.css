@@ -159,11 +159,33 @@ a.button {
 	padding: 15px;
 	text-decoration: none;
     -webkit-appearance: button;
-    -moz-appearance: button;
-    
-	
+    -moz-appearance: button;   
 }
 
+/* Report and data area */
+#myDataTable {
+	border-collapse: collapse;
+	border: 1px solid #805015;
+	font-size: 11px;
+	left: 205px;
+	position: absolute;
+	top: 140px;
+	width: 82%;
+}
+
+#myDataTable th, #myDataTable td {
+	text-align: left;
+	padding: 12px;
+}
+
+#myDataTable tr {
+	border-bottom: 1px solid #805015;
+}
+
+#myDataTable tr.header, #myDataTable tr:hover {
+	/*background-color: #D4A76A;*/
+	background-color: #FFDBAA; 
+}
 
 /* Make page responsive */
 @media screen and (max-width: 600px) {
