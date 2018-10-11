@@ -99,7 +99,7 @@ input[type=submit] {
     background-color: #552F00;
     color: #FFD9AA;
     display: block;
-    height: 18px;
+    height: 45px;
     padding: 12px;
     text-decoration: none;
     -webkit-appearance: button;
@@ -115,7 +115,6 @@ input[type=submit] {
     background-color: blue;
     color: white;
 }
-
 
 .containerfooter {
 	color: #FFD9AA;
@@ -162,6 +161,26 @@ a.button {
     -moz-appearance: button;   
 }
 
+/* Table Area */
+* {
+	box-sizing: border-box;
+}
+
+
+/* Search bar */
+
+#menuInput {
+	background: copper;
+	background-position: 10px 10px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	left: 205px;
+	margin-bottom: 12px;
+	padding: 12px 20px 12px 40px;
+	position: absolute;
+	top: 110px;
+	width: 50%;
+}
 /* Report and data area */
 #myDataTable {
 	border-collapse: collapse;
@@ -169,7 +188,7 @@ a.button {
 	font-size: 11px;
 	left: 205px;
 	position: absolute;
-	top: 140px;
+	top: 170px;
 	width: 82%;
 }
 
