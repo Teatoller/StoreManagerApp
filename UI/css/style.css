@@ -144,7 +144,7 @@ input[type=submit] {
 Span {
 	font-size: 15px;
 }
-
+/* button login page */
 a.button {
 	appearance: button;
     border: 1px solid #805015;        
@@ -159,6 +159,23 @@ a.button {
 	text-decoration: none;
     -webkit-appearance: button;
     -moz-appearance: button;   
+}
+/* Button for main area */
+a.button-main {
+	appearance: button;
+    border: 1px solid #805015;        
+    background: #552F00;	
+	color: #FFD9AA;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 25px;	
+	min-width: 20%;
+	padding: 15px;
+	text-decoration: none;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    margin-bottom: 8px;   
 }
 
 /* Table Area */
