@@ -224,6 +224,20 @@ a.button-main {
 	background-color: #FFDBAA; 
 }
 
+/* Claculator pad */
+.calc {
+	background: green;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: 1px solid
+}
+.calcT {
+	background: #552F00;
+	border-style: none;	
+}
+
+
 /* Make page responsive */
 @media screen and (max-width: 600px) {
 	input[type=submit]{
