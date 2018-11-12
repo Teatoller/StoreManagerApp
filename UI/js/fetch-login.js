@@ -1,8 +1,8 @@
 const login = document.getElementById('login');
 login.addEventListener('submit',(e) => {
     e.preventDefault();
-    let username = document.getElementById('username').nodeValue;
-    let password = document.getElementById('password').nodeValue;
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
 const url = "http://127.0.0.1:5000/api/v2/auth/login";
 let data = {
     username:'username',
