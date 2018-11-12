@@ -3,8 +3,6 @@ login.addEventListener('submit',(e) => {
     e.preventDefault();
     let username = document.getElementById('username').nodeValue;
     let password = document.getElementById('password').nodeValue;
-})
-
 const url = "http://127.0.0.1:5000/api/v2/auth/login";
 let data = {
     username:'username',
@@ -31,4 +29,5 @@ fetch(request)
     else
     localStorage.setItem('token', response,token)
     window.location.assign('login.html')
+})
 })
