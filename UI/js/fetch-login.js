@@ -5,8 +5,7 @@ login.addEventListener('submit',(e) => {
     let password = document.getElementById('password').nodeValue;
 })
 
-
-const url = "https://store-manager2-api-heroku.herokuapp.com/api/v2/auth/login";
+const url = "http://127.0.0.1:5000/api/v2/auth/login";
 let data = {
     username:'username',
     password: 'password'
@@ -22,9 +21,14 @@ let request = new Request(url, {
     body:JSON.stringify({username:username, password:password})
 })
 fetch(request)
-.then(function(){
-    (request => request.json()).then(response => {
-        if (response.token) {localStorage.setItem('token',response.token);
-    token = localStorage.getItem('token')}
-    })
+.then(function(response){return response.json()})
+.then(function(response){
+    localStorage.setItem('token',response.token);
+    if(response.message === 'invalid')
+    {
+        document.getElementById('error').innerHTML = response.message;
+    }
+    else
+    localStorage.setItem('token', response,token)
+    window.location.assign('login.html')
 })
