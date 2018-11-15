@@ -10,7 +10,10 @@ body {
 	height: 35px;
 	width: 35px;
 }
-
+.fheader img {
+	height: 35px;
+	width: 35px;
+}
 .img-align {
 	display: inline-block;
 }
@@ -26,6 +29,18 @@ body {
 	padding: 40px;
 	position: relative;
 }
+.fheader {
+	background: #AA7739;
+	border: 1px solid #FFD9AA;
+	color: #552F00;
+	font-weight: bold;
+	margin: auto;
+	max-height: 25px;
+	max-width: 400px;
+	padding: 40px;
+	position: relative;
+}
+
 .header h1 {
 	color: #FFD9AA;
 	letter-spacing: 6px;
@@ -66,6 +81,17 @@ body {
 	margin: auto;
 	max-width: 400px;
 	max-height: 190px;
+	padding: 40px;
+}
+.containersignup {
+	background: #AA7739;
+	border-width: 0px 1px 0px 1px;
+	border-style: solid;
+	color: #FFD9AA;
+	font-weight: bold;
+	margin: auto;
+	max-width: 400px;
+	max-height: 350px;
 	padding: 40px;
 }
 /* Input fields */
@@ -124,6 +150,15 @@ input[type=submit] {
 	max-width: 400px;
 	padding: 40px;
 	text-align: center; 	
+}
+.fcontainerfooter {
+	color: #FFD9AA;
+	background: #AA7739;
+	margin-top: 20px;
+	margin: auto;
+	max-width: 400px;
+	padding: 40px;
+	text-align: right; 	
 }
 
 .attcreation {
