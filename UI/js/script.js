@@ -31,8 +31,7 @@ function fetchlogin(event){
             mode:'cors',
             body: JSON.stringify(data)
         })
-        .then((response) => response.json())
-        // .then((data1) => console.log(data1))
+        .then((response) => response.json())        
         .then((data)=> {
             if (data["access_token"]) {
                 localStorage.setItem("access_token", JSON.stringify(data["access_token"]));
