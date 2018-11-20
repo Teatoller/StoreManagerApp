@@ -1,7 +1,7 @@
 // const route = "http://127.0.0.1:5000/api/v2";
 const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2"
 const appsignup = document.getElementById("signupForm");
-appsignup.addEventListener("click","submit",
+appsignup.addEventListener("submit",appsignup);
 function appsignup(event){
     event.preventDefault();
     let firstname = appsignup["firstname"].value;
@@ -54,12 +54,16 @@ function appsignup(event){
             method: 'POST',
             headers: {
             'Content-Type': 'application/json',
-            'Accept': 'application/json, */*'
+            'Accept': 'application/json, */*',
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Request-Method': '*',
+            'Authorization': access_token
             },
             mode:'cors',
             body: JSON.stringify(data)
         })
-        .then((response) => response.json())        
+        .then((response) => response.json())
+        console.log(response.json)    
         .then((data)=> {
             if (data["access_token"]) {
                 localStorage.setItem("access_token", JSON.stringify(data["access_token"]));
@@ -72,4 +76,4 @@ function appsignup(event){
         })
         .catch(err => console.log(err));
     }
-});
+}
