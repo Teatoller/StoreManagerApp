@@ -1,5 +1,5 @@
 // const route = "http://127.0.0.1:5000/api/v2";
-const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2"
+const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2";
 const appsignup = document.getElementById("signupForm");
 appsignup.addEventListener("submit",appSignup);
 function appSignup(event){
