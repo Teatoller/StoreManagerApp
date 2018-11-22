@@ -1,15 +1,18 @@
-const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2"
+let token = localStorage.getItem('access_token');
+let access_token = 'Bearer ' + token;
+// const route = "http://127.0.0.1:5000/api/v2";
+const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2";
 const appcreateproduct = document.getElementById("productForm");
 appcreateproduct.addEventListener("submit",appCreateprod);
 function appCreateprod(event){
     event.preventDefault();
-    let product = appcreateproduct["product"].value;
+    let name = appcreateproduct["name"].value;
     let price = appcreateproduct["price"].value;
     let quantity = appcreateproduct["quantity"].value;
     let category = appcreateproduct["category"].value;    
-    if (product == ""){
+    if (name == ""){
         alert("Product field cannot be empty");
-        document.inputproduct.product.focus();
+        document.inputproduct.name.focus();
         return false
     }
     else if (price == ""){
@@ -30,11 +33,11 @@ function appCreateprod(event){
     else{        
         let url = route+"/products"
         let data = {
-            'product': product,
+            'name': name,
             'price': price,
             'quantity': quantity,
-            'category': category,            
-        };        
+            'category': category           
+        };                
         fetch(url, {
             method: 'POST',
             headers: {
@@ -42,20 +45,20 @@ function appCreateprod(event){
             'Accept': 'application/json, */*',
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Request-Method': '*' ,
-            'Authorization' : "Bearer "+ localStorage.access_token           
+            'Authorization' : access_token           
             },
             mode:'cors',
             body: JSON.stringify(data)
         })
         .then((response) => response.json())            
         .then((data)=> {
-            if (data["access_token"]) {
-                localStorage.setItem("access_token", JSON.stringify(data["access_token"]));
-                window.location.assign("sAttendntCreation.html")
+            if (data.message) {                
+                console.log(data.message);
+                window.location.assign("rwAdminProdct.html")
             }
             else {
-                document.getElementById("productStatus").innerHTML = data["msg"];
-                console.log(data["msg"]);
+                document.getElementById("productStatus").innerHTML = data.msg;
+                console.log(data.msg);
             }
         })
         .catch(err => console.log(err));
