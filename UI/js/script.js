@@ -1,9 +1,9 @@
 // const route = "http://127.0.0.1:5000/api/v2";
-const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2"
+const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2";
 const applogin = document.getElementById("loginForm");
-applogin.addEventListener("submit",
+applogin.addEventListener("submit",fetchlogin);
 function fetchlogin(event){
-    event.preventDefault()
+    event.preventDefault();
     let username = applogin["username"].value;
     let password = applogin["password"].value;
     if (username == ""){
@@ -33,9 +33,10 @@ function fetchlogin(event){
         })
         .then((response) => response.json())        
         .then((data)=> {
-            if (data["access_token"]) {
-                localStorage.setItem("access_token", JSON.stringify(data["access_token"]));
-                window.location.assign("landing.html")
+            if (data.access_token) {
+                console.log(data.access_token);
+                localStorage.setItem("access_token", data.access_token);
+                window.location.assign("landing.html");
             }
             else {
                 document.getElementById("loginStatus").innerHTML = data["msg"];
@@ -44,4 +45,4 @@ function fetchlogin(event){
         })
         .catch(err => console.log(err));
     }
-});
+}

@@ -1,5 +1,5 @@
 // const route = "http://127.0.0.1:5000/api/v2";
-const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2"
+const route = "https://store-manager2-api-heroku.herokuapp.com/api/v2";
 const appsignup = document.getElementById("signupForm");
 appsignup.addEventListener("submit",appSignup);
 function appSignup(event){
@@ -12,32 +12,32 @@ function appSignup(event){
     let role = appsignup["role"].value;
     if (firstname == ""){
         alert("Firstname field cannot be empty");
-        document.login.firstname.focus();
+        document.inputsignup.firstname.focus();
         return false
     }
     else if (lastname == ""){
         alert("Lastname cannot be empty");
-        document.login.lastname.focus();
+        document.inputsignup.lastname.focus();
         return false
     }
     else if (username == ""){
         alert("Username field cannot be empty");
-        document.login.username.focus();
+        document.inputsignup.username.focus();
         return false
     }
     else if (email == ""){
         alert("Email cannot be empty");
-        document.login.email.focus();
+        document.inputsignup.email.focus();
         return false
     }
     else if (password == ""){
         alert("Password cannot be empty");
-        document.login.password.focus();
+        document.inputsignup.password.focus();
         return false
     }
     else if (role == ""){
         alert("Role cannot be empty");
-        document.login.role.focus();
+        document.inputsignup.role.focus();
         return false
     }
     else{        
